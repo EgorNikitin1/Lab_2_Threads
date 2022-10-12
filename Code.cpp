@@ -72,7 +72,7 @@ int main()
 	std::cout << "Start of filling array\n";
  	for (int i = 0; i < custom_array.size(); i++) {
 		for (int j = 0; j < string_lenght; j++) {
-			custom_array.at(i) += std::to_string((rand() % 9));
+			custom_array.at(i) += std::to_string((rand() % 10));
 		}
 		progress += increment;
 		std::cout << std::left << std::setprecision(3) << std::setw(6) << progress << "%\n";
